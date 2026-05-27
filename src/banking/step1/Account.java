@@ -1,7 +1,7 @@
 package banking.step1;
 
 public class Account {
-	public String accountNum;
+	String accountNum;
 	String customerName;
 	int balanceMoney;
 	
