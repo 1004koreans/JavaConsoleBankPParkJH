@@ -11,6 +11,7 @@ public class Account11 {
 		this.customerName=customerName;
 		this.balanceMoney=string;
 		
-	}//githun 연동
+	}//github 연동
+	//연동후 commit and push
 
 }
