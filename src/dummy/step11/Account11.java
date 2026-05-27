@@ -1,4 +1,4 @@
-package Bank.step11;
+package dummy.step11;
 
 public class Account11 {
 	String accountNum;

@@ -4,18 +4,18 @@ import java.util.Scanner;
 
 public class BankingSystemMain {
 
-	private static Account[] accounts;
+	private static Account[] accounts; // Account로 만든 배열통의 이름이 "accounts"이다
 	private static int numOfAccount;
 
 	public static void main(String[] args) {
-		accounts = new Account[10];
+		accounts = new Account[10];// accounts = 10개 Account 배열 정의
 	 
 		while (true) {
 
 			showMenu();
 			System.out.print("선택: ");
-			int choice = scan.nextInt();
-			scan.nextLine();
+			int choice = scan.nextInt();//장수를 읽은걸 choice라 하자
+			scan.nextLine();//남은 enter 제거
 
 			switch (choice) {
 			case 1:
@@ -51,7 +51,7 @@ public class BankingSystemMain {
 	public static void makeAccount() {
 		System.out.println("신규계좌개설");
 		System.out.print("계좌번호: ");
-		String accountNum = scan.nextLine();
+		String accountNum = scan.nextLine();//계좌번호 다음을 읽어온다
 
 		System.out.print("고객이름: ");
 		String customerName = scan.nextLine();
@@ -59,20 +59,23 @@ public class BankingSystemMain {
 		System.out.print("잔고: ");
 		String balanceMoney = scan.nextLine();
 
+		//Account클라스에서 만든 p,계좌객체를 참조변수로 만들어 3개를 묶어서 이동한다 왜? 편리함
 		Account p = new Account(accountNum, customerName, Integer.valueOf(balanceMoney));
-		System.out.println(p.accountNum);
+		System.out.println(p.accountNum);//객체,p의 accountNum이다
 		System.out.println(p.customerName);
 		System.out.println(p.balanceMoney);
-		accounts[numOfAccount++] = p;
+		accounts[numOfAccount++] = p;//문자열 입력값,1씩 증가하면서 계좌객체를 배열에 저장
 	}
 
 //계좌정보출력4
 	public static void showAccInfo() {
 		System.out.println("#### 계좌정보출력 ###");
 		for (int i = 0; i < numOfAccount; i++) {
-			Account acc = accounts[i];
+			Account acc = accounts[i];//중요
 
 			System.out.println("계좌번호: " + acc.accountNum);
+			//acc(accounts[i])의 accountNum이다
+			//System.out.println("계좌번호: " + accounts[i].accountNum);
 			System.out.println("고객이름: " + acc.customerName);
 			System.out.println("잔고: " + acc.balanceMoney);
 		}
@@ -90,6 +93,9 @@ public class BankingSystemMain {
 		for (int i = 0; i < numOfAccount; i++) {
 			Account acc = accounts[i];
 			if (acc.accountNum.equals(accNo)) {
+				//acc (accounts배열)의 accountNum이
+				//입력한 accNo와 같은가? 확인요
+				//if(accounts[i].accountNum.equals(accNo)와 같다.
 				acc.balanceMoney = acc.balanceMoney + Integer.valueOf(addMoney);
 				break;
 			}

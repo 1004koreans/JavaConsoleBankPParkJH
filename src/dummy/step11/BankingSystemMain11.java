@@ -1,4 +1,4 @@
-package Bank.step11;
+package dummy.step11;
 
 import java.util.Scanner;
 
