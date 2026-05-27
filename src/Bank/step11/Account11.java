@@ -11,6 +11,6 @@ public class Account11 {
 		this.customerName=customerName;
 		this.balanceMoney=string;
 		
-	}
+	}//githun 연동
 
 }
