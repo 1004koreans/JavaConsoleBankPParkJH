@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class BankingSystemMain {
 
+	private static Scanner scan = new Scanner(System.in);
 	private static Account[] accounts; // Account로 만든 배열통의 이름이 "accounts"이다
 	private static int numOfAccount;
 
@@ -120,6 +121,6 @@ public class BankingSystemMain {
 		 }
 	}
 	
-	private static Scanner scan = new Scanner(System.in);
+	
 
 }
