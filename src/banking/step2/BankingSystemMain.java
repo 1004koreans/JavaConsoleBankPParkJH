@@ -57,6 +57,7 @@ public class BankingSystemMain {
 		System.out.println("5.프로그램종료");
 		}
 ////////////////////////////////////////////
+//	
 	public static void showAccu() {
 		System.out.println("1.보통계좌");
 		System.out.println("2.신용계좌");
