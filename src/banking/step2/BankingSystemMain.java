@@ -35,15 +35,15 @@ public class BankingSystemMain {
 			case ICustomerDefine.DEPOSIT: //입금
 				mgr.depositMoney();
 				break;
-			case 3: //출금
+			case ICustomerDefine.WITHDRAW: //출금
 				mgr.withdrawMoney();
 				break;
-			case 4: //계좌정보전체출력
+			case ICustomerDefine.INQUIRE: //계좌정보전체출력
 				mgr.showAccInfo();
 				break;
 			case 5: //종료
 				return;
-			}
-		}
-	}
-}
+			}//switch
+		}//showMenu
+	}//AccountManager
+}//public static Scanner

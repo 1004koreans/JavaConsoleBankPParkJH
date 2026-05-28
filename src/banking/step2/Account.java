@@ -21,7 +21,7 @@ abstract class Account {
     }
 
     //이자계산을 위한 추상메서드로 정의. 오버라이딩이 목적. 
-    public abstract void addInterest(int money);
+    public abstract void calculatedBalance(int money);
 }
 		
 	

@@ -17,9 +17,9 @@ class NormalAccount extends Account {
 
     //이자 계산 
     @Override
-    public void addInterest(int money) {
+    public void calculatedBalance(int money) {
     	//일반계좌 : 잔고 + (잔고 * 기본이자) + 입금액
     	balanceMoney = balanceMoney + 
-    			(int)(balanceMoney * basicInterest) + money;
+    			(int)(balanceMoney * (basicInterest/100)) + money;
     } 
 }
