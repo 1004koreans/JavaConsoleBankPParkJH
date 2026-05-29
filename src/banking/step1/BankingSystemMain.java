@@ -3,6 +3,7 @@ package banking.step1;
 import java.util.Scanner;
 //1학원에서 pull
 //2Github clone success
+//3Commit & Push and Success
 public class BankingSystemMain {
 
 	private static Scanner scan = new Scanner(System.in);
