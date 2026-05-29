@@ -1,7 +1,7 @@
 package banking.step1;
 
 import java.util.Scanner;
-
+//학원에서 pull
 public class BankingSystemMain {
 
 	private static Scanner scan = new Scanner(System.in);
